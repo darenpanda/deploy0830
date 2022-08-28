@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Owner;
 use App\Models\Product;
+use App\Models\Product2;
 
 class Shop extends Model
 {
@@ -27,6 +28,12 @@ class Shop extends Model
     public function product()
     {
         return $this->hasMany(Product::class);
+
+    //     public function product2()
+    // {
+    //     return $this->hasMany(Product2::class);  
+
+
     }
 
 }

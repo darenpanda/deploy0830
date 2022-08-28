@@ -11,9 +11,9 @@
               <div class="p-6 bg-white border-b border-gray-200">
                 <x-flash-message status="session('status')" />
                 <div class="p-2 mt-4 flex justify-end w-full">
-                  <button onclick="location.href='{{ route('owner.products.create')}}'" class="mb-4 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">新規登録</button>
+                  <button onclick="location.href='{{ route('owner.products2.create')}}'" class="mb-4 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">新規登録だよ</button>
                 </div>
-テスト
+プロダクト２
 
 
 

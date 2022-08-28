@@ -26,6 +26,21 @@
                     <x-nav-link :href="route('owner.products.index')" :active="request()->routeIs('owner.products.index')">
                         商品管理
                     </x-nav-link>
+                    <x-nav-link :href="route('owner.products.index')" :active="request()->routeIs('owner.products.index')">
+                        賞味期限ラベル作成
+                    </x-nav-link>
+                    <x-nav-link :href="route('owner.dashboard2')" :active="request()->routeIs('owner.dashboard2')">
+                        {{ __('ラベル') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('owner.products2.create')" :active="request()->routeIs('owner.products2.create')">
+                        商品管理2
+                    </x-nav-link>
+                    <x-nav-link :href="route('owner.products2.index')" :active="request()->routeIs('owner.products2.index')">
+                        賞味期限ラベル作成
+                    </x-nav-link>              
+
+
+
                 </div>
             </div>
 

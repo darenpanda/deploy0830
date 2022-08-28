@@ -11,6 +11,7 @@ use App\Http\Controllers\Owner\Auth\VerifyEmailController;
 use App\Http\Controllers\Owner\ShopController;
 use App\Http\Controllers\Owner\ImageController;
 use App\Http\Controllers\Owner\ProductController;
+use App\Http\Controllers\Owner\ProductController2;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -41,10 +42,17 @@ Route::resource('images', ImageController::class)
 Route::resource('products', ProductController::class)
 ->middleware('auth:owners')->except(['show']);
 
+Route::resource('products2', ProductController2::class)
+->middleware('auth:owners')->except(['show']);
+
 
 Route::get('/dashboard', function () {
     return view('owner.dashboard');
 })->middleware(['auth:owners'])->name('dashboard');
+
+Route::get('/dashboard2', function () {
+    return view('owner.dashboard2');
+})->middleware(['auth:owners'])->name('dashboard2');
 
 
 // Route::get('/register', [RegisteredUserController::class, 'create'])
